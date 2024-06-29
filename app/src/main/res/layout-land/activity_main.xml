@@ -11,9 +11,9 @@
     <LinearLayout
         android:id="@+id/linearLayout4"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="25dp"
         android:layout_marginEnd="8dp"
         android:gravity="center"
         android:orientation="horizontal"
@@ -25,10 +25,9 @@
         <LinearLayout
             android:id="@+id/linearLayout"
             android:layout_width="220dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_marginTop="0dp"
             android:background="@drawable/painel_bg"
-            android:backgroundTint="#5A7F78"
             android:gravity="center"
             android:orientation="vertical"
             android:padding="10dp">
@@ -50,7 +49,9 @@
                 android:backgroundTint="#314C53"
                 android:text="Ligar"
                 android:textColor="#FFFFFF"
-                android:textColorLink="#FFFFFF" />
+                android:textColorLink="#FFFFFF"
+                app:strokeColor="#000000"
+                app:strokeWidth="2dp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -81,11 +82,10 @@
         <LinearLayout
             android:id="@+id/linearLayout2"
             android:layout_width="220dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_marginStart="8dp"
             android:layout_marginEnd="8dp"
             android:background="@drawable/painel_bg"
-            android:backgroundTint="#5A7F78"
             android:gravity="center"
             android:orientation="vertical"
             android:padding="10dp">
@@ -107,7 +107,9 @@
                 android:backgroundTint="#314C53"
                 android:text="Ligar"
                 android:textColor="#FFFFFF"
-                android:textColorLink="#FFFFFF" />
+                android:textColorLink="#FFFFFF"
+                app:strokeColor="#000000"
+                app:strokeWidth="2dp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -139,10 +141,9 @@
         <LinearLayout
             android:id="@+id/linearLayout3"
             android:layout_width="220dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_marginTop="0dp"
             android:background="@drawable/painel_bg"
-            android:backgroundTint="#5A7F78"
             android:gravity="center"
             android:orientation="vertical"
             android:padding="10dp">
@@ -164,7 +165,9 @@
                 android:backgroundTint="#314C53"
                 android:text="Ligar"
                 android:textColor="#FFFFFF"
-                android:textColorLink="#FFFFFF" />
+                android:textColorLink="#FFFFFF"
+                app:strokeColor="#000000"
+                app:strokeWidth="2dp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -251,8 +254,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/linearLayout6"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
 
         <TextView
             android:id="@+id/tvTemp"

@@ -230,7 +230,7 @@ public class MainActivityViewModel extends AndroidViewModel {
      * Método que cria e executa uma requisição ao servidor web para pegar o status do motor
      * @return um LiveData que vai conter a resposta do servidor quando esta estiver disponível
      */
-    public LiveData<Boolean> getMotorStatus() {
+    public LiveData<Boolean> getBombaStatus() {
 
         // Cria um container do tipo MutableLiveData (um LiveData que pode ter seu conteúdo alterado).
         MutableLiveData<Boolean> result = new MutableLiveData<>();

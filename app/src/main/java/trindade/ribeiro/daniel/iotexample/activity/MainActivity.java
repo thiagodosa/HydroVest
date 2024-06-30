@@ -347,7 +347,7 @@ public class MainActivity extends AppCompatActivity {
         Button btnBomba = findViewById(R.id.btnBomba);
 
         // envia uma requisição ao ESP32 para saber se o motor está ligado ou desligado
-        LiveData<Boolean> motorStatusLD = vm.getMotorStatus();
+        LiveData<Boolean> motorStatusLD = vm.getBombaStatus();
 
         // observa motorStatusLD. Assim que o ESP32 responder, o resultado vai aparecer em motorStatusLD
         motorStatusLD.observe(this, new Observer<Boolean>() {
